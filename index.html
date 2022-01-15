@@ -24,7 +24,7 @@
    <link rel="stylesheet" href="css/layout.css">
    <link rel="stylesheet" href="css/media-queries.css">
    <link rel="stylesheet" href="css/magnific-popup.css">
-
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
    <!-- Script
    ================================================== -->
@@ -96,17 +96,17 @@
 
    <!-- About Section
    ================================================== -->
-   <section id="about">
+   <section id="about" >
 
-      <div class="row">
+      <div class="row" >
 
-         <div class="three columns">
+         <div class="three columns" data-aos="fade-right">
 
             <img class="profile-pic" src="images/profilepict.png" alt="" />
 
          </div>
 
-         <div class="nine columns main-col">
+         <div class="nine columns main-col" data-aos="fade-left">
 
             <h2>About Me</h2>
 
@@ -151,11 +151,11 @@ In the ever-changing field of computer science, I enjoy learning new technologie
 
    <!-- Resume Section
    ================================================== -->
-   <section id="resume">
+   <section id="resume" >
 
       <!-- Education
       ----------------------------------------------- -->
-      <div class="row education">
+      <div class="row education"  data-aos="fade-right" >
 
          <div class="three columns header-col">
             <h1><span>Education</span></h1>
@@ -180,7 +180,7 @@ In the ever-changing field of computer science, I enjoy learning new technologie
 
             <!-- Work
       ----------------------------------------------- -->
-            <div class="row work">
+            <div class="row work"  data-aos="fade-right" >
 
                <div class="three columns header-col">
                   <h1><span>Work</span></h1>
@@ -225,9 +225,9 @@ In the ever-changing field of computer science, I enjoy learning new technologie
          </section>
             <!-- Skills
       ----------------------------------------------- -->
-      <section class="skills s-centerContentInDiv">
+      <section class="skills s-centerContentInDiv" >
          <h1><span>Experienced In</span></h1>
-      <div class="row">
+      <div class="row" data-aos="zoom-in">
       <div class="twelve columns header-col">
 
          <div class="skill">
@@ -295,16 +295,16 @@ In the ever-changing field of computer science, I enjoy learning new technologie
 
          <div class="twelve columns collapsed">
 
-            <h1>Check Out Some of My Interests.</h1>
+            <h1>Check Out Some of My Projects.</h1>
 
             <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf" data-aos="zoom-in-up">
 
-               <div class="columns portfolio-item">
+               <div class="columns portfolio-item" >
                   <div class="item-wrap">
 
                      <a href="#modal-01" title="">
-                        <img alt="" src="images/portfolio/coffee.jpg">
+                        <img alt="" src="images/portfolio/coffee.png">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
                               <h5>Morning Walks</h5>
@@ -446,7 +446,7 @@ In the ever-changing field of computer science, I enjoy learning new technologie
 
          <div id="modal-01" class="popup-modal mfp-hide">
 
-            <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.jpeg" alt="" />
+            <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.png" alt="" />
 
             <div class="description-box">
                <h4>Morning Walks</h4>
@@ -805,6 +805,10 @@ In the ever-changing field of computer science, I enjoy learning new technologie
 
    <!-- Java Script
    ================================================== -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+   AOS.init();
+   </script>
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
    <script>
       window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')
